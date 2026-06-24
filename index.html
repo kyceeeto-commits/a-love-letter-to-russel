@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>in every lifetime ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+.bg{
+position:fixed;
+inset:0;
+background:url('cover.jpg') center center/cover;
+filter:blur(30px) brightness(.25);
+transform:scale(1.15);
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+inset:0;
+background:linear-gradient(
+180deg,
+rgba(0,0,0,.2),
+rgba(0,0,0,.85)
+);
+z-index:-1;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:end;
+margin-top:30px;
+}
+
+.album{
+width:300px;
+height:300px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:0 15px 60px rgba(0,0,0,.6);
+}
+
+.hero-text small{
+letter-spacing:2px;
+text-transform:uppercase;
+opacity:.8;
+}
+
+.hero-text h1{
+font-size:clamp(3rem,8vw,6rem);
+font-weight:900;
+margin:10px 0;
+}
+
+.hero-text p{
+opacity:.85;
+}
+
+.play{
+margin-top:25px;
+width:75px;
+height:75px;
+border-radius:50%;
+background:#ff75b5;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 30px rgba(255,117,181,.5);
+transition:.3s;
+}
+
+.play:hover{
+transform:scale(1.1);
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:25px;
+padding:25px;
+margin-top:35px;
+}
+
+.song{
+font-size:1.6rem;
+font-weight:700;
+}
+
+.artist{
+opacity:.7;
+margin-bottom:20px;
+}
+
+iframe{
+width:100%;
+height:352px;
+border:none;
+border-radius:18px;
+}
+
+.letter{
+white-space:pre-line;
+line-height:2.1;
+font-size:1rem;
+}
+
+.secret{
+margin-top:35px;
+text-align:center;
+}
+
+.secret button{
+padding:14px 25px;
+border:none;
+border-radius:999px;
+background:#ff75b5;
+color:white;
+font-weight:700;
+cursor:pointer;
+}
+
+.hidden{
+display:none;
+margin-top:20px;
+font-size:1.1rem;
+line-height:1.8;
+}
+
+.footer{
+text-align:center;
+margin:50px 0;
+opacity:.7;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<div class="container">
+
+<div class="hero">
+
+<img src="cover.jpg" class="album">
+
+<div class="hero-text">
+
+<small>for russel ♡</small>
+
+<h1>in every lifetime</h1>
+
+<p>a collection of all the love i have for you.</p>
+
+<a href="#song" class="play">▶</a>
+
+</div>
+
+</div>
+
+<div class="card" id="song">
+
+<div class="song">kalapastangan</div>
+<div class="artist">fitterkarma</div>
+
+<iframe
+src="https://www.youtube.com/embed/lk5Tg6RB5ew"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="card">
+
+<div class="letter">
+
+to my dearest love, russel.
+
+my heart belongs to u in every lifetime there is. u are the most precious thing that ever happened to me. i thank god everyday, he gave me u. the most adorable, most affectionate, most loving, most caring, most thoughtful, most intelligent, bravest, and above all, softest human being.
+
+u are my rock, baby. without u, i stumble. we are still not in our highest peak right now, and the bumpy roads are getting bumpier ahead of us. but i wanna take that road with u only. i see nobody else but u.
+
+u are the most pogi to me mahal. the most pogi especially when u smile, so promise to always smile for me. u have the most beautiful eyes, the ones i will be looking into for the rest of my life, i pray to god, ikaw na.
+
+mahal na mahal kita.
+
+ikaw ang pinakamamahal ko sa lahat.
+
+forgive me baby for the times na we get sad together, or whenever we get into arguments and disagreements. and whenever we hurt each other. i know we are still navigating our love.
+
+i love you babe! sobra! sana maramdaman mo kung gano kalalim yung pagmamahal ko sayo.
+
+ikaw ang pinili at pipiliin ko palagi! 💗✨😘
+
+forever yours,
+
+kyla
+
+</div>
+
+</div>
+
+<div class="secret">
+
+<button onclick="document.getElementById('love').style.display='block'">
+click me, mahal ♡
+</button>
+
+<div id="love" class="hidden">
+if i could choose again, in every lifetime, every universe, every version of me—
+i would still choose you.
+</div>
+
+</div>
+
+<div class="footer">
+made with all my love ♡
+</div>
+
+</div>
+
+<script>
+document.querySelector('button').addEventListener('click',()=>{
+document.getElementById('love').style.display='block';
+});
+</script>
+
+</body>
+</html>
